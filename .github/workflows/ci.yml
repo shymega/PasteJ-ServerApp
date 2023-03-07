@@ -2,10 +2,6 @@ name: CI workflow
 
 on: [push, pull_request]
 
-defaults:
-  run:
-    working-directory: RoundupFunction
-
 concurrency:
   group: gh-ci-ref-${{ github.ref }}
   cancel-in-progress: true
